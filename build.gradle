@@ -19,8 +19,8 @@
 
 import java.nio.file.Path
 import java.util.regex.Matcher
-import org.eclipse.jgit.lib.Repository
-import org.eclipse.jgit.lib.RepositoryBuilder
+//import org.eclipse.jgit.lib.Repository
+//import org.eclipse.jgit.lib.RepositoryBuilder
 import org.gradle.plugins.ide.eclipse.model.SourceFolder
 import org.apache.tools.ant.taskdefs.condition.Os
 import org.elasticsearch.gradle.BuildPlugin
@@ -241,6 +241,7 @@ subprojects {
     "org.elasticsearch.plugin:lang-mustache-client:${version}": ':modules:lang-mustache',
     "org.elasticsearch.plugin:parent-join-client:${version}": ':modules:parent-join',
     "org.elasticsearch.plugin:aggs-matrix-stats-client:${version}": ':modules:aggs-matrix-stats',
+    "org.elasticsearch.plugin:aggs-bitmask-client:${version}": ':modules:aggs-bitmask',
     "org.elasticsearch.plugin:percolator-client:${version}": ':modules:percolator',
   ]
   if (indexCompatVersions[-1].snapshot) {
